@@ -1,0 +1,18 @@
+Package: HazelcastClient
+Type: Package
+Title: Expose the HazelcastClient C++ Class using Rcpp Modules
+Version: 0.0.1
+Authors@R: c(
+    person("Zbynek", "Nevrly", email = "znevrly@finmason.com", role = c("aut", "cre"))
+    )
+Description: Hazelcast c++ client
+BugReports: 
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.0), methods
+LinkingTo: Rcpp
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Roxygen: list(markdown = TRUE)
+SystemRequirements: C++11

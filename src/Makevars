@@ -1,0 +1,2 @@
+PKG_CPPFLAGS=-I../hz-libs/include -DBOOST_THREAD_VERSION=5 -std=c++11 -pthread
+PKG_LIBS=../hz-libs/lib/libhazelcast-cpp-client.a ../hz-libs/lib/libboost_thread.a ../hz-libs/lib/libboost_chrono.a
