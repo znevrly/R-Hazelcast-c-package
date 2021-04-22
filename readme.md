@@ -1,10 +1,10 @@
-# build package inside folder
+# Build package (relative path)
 
     R CMD INSTALL .
 
-# usage in R
+# Usage in R
 
     library(HazelcastClient)
-    new(HazelcastClient, ip = "10.30.100.180", clusterName = "DEV")
+    hz = new(HazelcastClient, ip = "10.30.100.180", clusterName = "DEV")
 
 
