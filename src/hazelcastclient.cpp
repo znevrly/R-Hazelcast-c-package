@@ -4,12 +4,11 @@
 
 
 // Constructor
-HazelcastClient::HazelcastClient(std::string ip, std::string clusterName) {
-  hazelcast::client::client_config config;
-  config.set_cluster_name(clusterName);
-  config.get_network_config().add_address({ ip, 5701});
-  // hz = hazelcast::new_client(std::move(config)).get();
+HazelcastClient::HazelcastClient(std::string ip, std::string clusterName) : hz(hazelcast::new_client(
+            hazelcast::client::client_config().set_cluster_name(clusterName).get_network_config().add_address(
+                    {ip, 5701})).get()) {
 }
+
 
 // Getters
 std::string HazelcastClient::GetTest() { return url; }
