@@ -4,7 +4,7 @@
 #define HazelcastClient_H
 
 #include <string>
-#include <vector>
+#include <hazelcast/client/hazelcast_client.h>
 
 class HazelcastClient
 {
@@ -14,7 +14,7 @@ public:
   HazelcastClient(std::string ip, std::string clusterName);
 
   // Getters
-  int GetTest();
+  std::string GetTest();
 
   // Methods
   std::string Get(std::string key);
@@ -25,6 +25,7 @@ private:
 
   // Member variables
   std::string url;
+  hazelcast::client::hazelcast_client hz;
 };
 
 #endif /* HazelcastClient_H */

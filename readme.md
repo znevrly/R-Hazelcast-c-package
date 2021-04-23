@@ -5,6 +5,6 @@
 # Usage in R
 
     library(HazelcastClient)
-    hz = new(HazelcastClient, ip = "10.30.100.180", clusterName = "DEV")
+    hz <- new(HazelcastClient, ip = "10.30.100.180", clusterName = "DEV")
 
 
