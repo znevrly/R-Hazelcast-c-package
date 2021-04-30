@@ -16,5 +16,6 @@ public:
 private:
   std::string mapName;
   std::unique_ptr<hazelcast::client::hazelcast_client> hz;
+  std::shared_ptr<hazelcast::client::imap> map;
 };
 #endif /* HazelcastClient_H */
