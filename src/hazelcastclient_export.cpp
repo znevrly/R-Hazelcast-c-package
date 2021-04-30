@@ -2,7 +2,7 @@
 #include <Rcpp.h>
 
 // Include our definition of the HazelcastClient file (e.g. "")
-#include "HazelcastClient.h"
+#include "hazelcastclient.h"
 
 // Expose (some of) the HazelcastClient class
 RCPP_MODULE(HazelcastClientEx){
