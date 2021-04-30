@@ -1,4 +1,4 @@
-//  HazelcastClient.h
+//  Hazelcastclient.h
 #ifndef HazelcastClient_H
 #define HazelcastClient_H
 #include <string>

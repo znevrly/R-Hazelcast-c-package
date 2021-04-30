@@ -1,6 +1,6 @@
 //  HazelcastClient.cpp
 
-#include "hazelcastClient.h"
+#include "hazelcastclient.h"
 
 HazelcastClient::HazelcastClient(std::string ip, std::string clusterName, int port)
 {
