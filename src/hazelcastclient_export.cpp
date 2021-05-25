@@ -8,6 +8,7 @@
 RCPP_MODULE(HazelcastClientEx){
   Rcpp::class_<HazelcastClient>("HazelcastClient")
   .constructor<std::string, std::string, int>()
+  .method("GetUrl", &HazelcastClient::GetUrl)
   .method("SetMap", &HazelcastClient::SetMap)
   .method("Get", &HazelcastClient::Get)
   .method("Put", &HazelcastClient::Put);
