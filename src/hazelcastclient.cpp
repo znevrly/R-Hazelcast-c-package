@@ -16,6 +16,9 @@ HazelcastClient::HazelcastClient(std::string ip, std::string clusterName, int po
 
 std::vector<hazelcast::byte> HazelcastClient::Get(std::string key)
 {
+  if (!map->contains_key(key).get()) {
+    throw std::invalid_argument("HZ error: can not find key: " + key + " on " + GetUrl());
+  }
   return map->get<std::string, std::vector<hazelcast::byte>>(key).get().value();
 }
 
