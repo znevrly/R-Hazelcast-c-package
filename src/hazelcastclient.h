@@ -12,7 +12,8 @@ public:
   std::vector<hazelcast::byte> Get(std::string key);
   void Put(std::string key, std::vector<hazelcast::byte> value);
   void SetMap(std::string mapName);
-  std::string GetUrl(); 
+  std::string GetUrl();
+  void SetVerboseMode(bool verboseMode); 
 
 private:
   std::string url;
@@ -20,6 +21,7 @@ private:
   std::string clusterName;
   int port;
   std::string mapName;
+  bool verboseMode;
   std::unique_ptr<hazelcast::client::hazelcast_client> hz;
   std::shared_ptr<hazelcast::client::imap> map;
 };
